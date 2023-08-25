@@ -10,7 +10,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
     <!-- font Awesome Api for Icon's -->
@@ -78,9 +78,73 @@
         </div>
 
         <!-- Social Icons -->
+
+
+
+
+        <aside>
+            <div class="sidebar">
+
+                <div class="sidebar__close-icon">
+                    <img src="./images/icon-close.svg" alt="x close button" class="sidebar__closeBtn">
+                </div>
+
+                <div class="sidebar__menu">
+
+                    <ul class="sidebar__list">
+                        <li><a href="index.html" class="sidebar__links">Home</a></li>
+                        <li><a href="#" class="sidebar__links">Gallery </a>
+                            <span class="sidebar__icon" id="side-icon">
+                                <i class="fa-solid fa-chevron-down"></i></span>
+
+                            <div class="sidebar__dropdown-content">
+                                <ul class="sidebar__dropdown-list">
+                                    <li><a href="#" class="sidebar__dropdown-links">Nature</a></li>
+                                    <li><a href="#" class="sidebar__dropdown-links">Portrait</a></li>
+                                    <li><a href="#" class="sidebar__dropdown-links">Architecture</a></li>
+                                    <li><a href="#" class="sidebar__dropdown-links">Animals</a></li>
+                                    <li><a href="#" class="sidebar__dropdown-links">Sports</a></li>
+                                    <li><a href="#" class="sidebar__dropdown-links">Travel</a></li>
+                                    <li><a href="#" class="sidebar__dropdown-links submenu">Sub Menu <span
+                                                class="sidebar__icon">
+                                                <i class="fa-solid fa-chevron-right" id="subdropdown"></i></span></a>
+
+
+                                        <div class="sidebar__sub-dropdown">
+                                            <!-- <ul> -->
+                                            <a href="#" class="sidebar__dropdown-links">Menu One</a>
+                                            <a href="#" class="sidebar__dropdown-links">Menu two</a>
+                                            <a href="#" class="sidebar__dropdown-links">Menu three</a>
+                                            <!-- </ul> -->
+                                        </div>
+
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li><a href="#" class="sidebar__links">Services</a></li>
+                        <li><a href="#" class="sidebar__links">About</a></li>
+                        <li><a href="#" class="sidebar__links">Contact</a></li>
+
+                    </ul>
+                </div>
+
+
+
+            </div>
+        </aside>
+
+        <div class="menu__ham">
+            <p id="hamIcon" class='menu__icon'>&nbsp;</p>
+
+        </div>
+
+
     </header>
-    
-    <!-- <script src="app.js"></script> -->
+
+
+    <script src="app.js"></script>
 </body>
 
 </html>
