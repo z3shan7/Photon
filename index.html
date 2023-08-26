@@ -18,6 +18,12 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- swiper js api -->
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
     <link rel="stylesheet" href="style.css">
     <title>Photon</title>
 </head>
@@ -80,69 +86,138 @@
         <!-- Social Icons -->
 
 
-
-
-        <aside>
-            <div class="sidebar">
-
-                <div class="sidebar__close-icon">
-                    <img src="./images/icon-close.svg" alt="x close button" class="sidebar__closeBtn">
-                </div>
-
-                <div class="sidebar__menu">
-
-                    <ul class="sidebar__list">
-                        <li><a href="index.html" class="sidebar__links">Home</a></li>
-                        <li><a href="#" class="sidebar__links">Gallery </a>
-                            <span class="sidebar__icon" id="side-icon">
-                                <i class="fa-solid fa-chevron-down"></i></span>
-
-                            <div class="sidebar__dropdown-content">
-                                <ul class="sidebar__dropdown-list">
-                                    <li><a href="#" class="sidebar__dropdown-links">Nature</a></li>
-                                    <li><a href="#" class="sidebar__dropdown-links">Portrait</a></li>
-                                    <li><a href="#" class="sidebar__dropdown-links">Architecture</a></li>
-                                    <li><a href="#" class="sidebar__dropdown-links">Animals</a></li>
-                                    <li><a href="#" class="sidebar__dropdown-links">Sports</a></li>
-                                    <li><a href="#" class="sidebar__dropdown-links">Travel</a></li>
-                                    <li><a href="#" class="sidebar__dropdown-links submenu">Sub Menu <span
-                                                class="sidebar__icon">
-                                                <i class="fa-solid fa-chevron-right" id="subdropdown"></i></span></a>
-
-
-                                        <div class="sidebar__sub-dropdown">
-                                            <!-- <ul> -->
-                                            <a href="#" class="sidebar__dropdown-links">Menu One</a>
-                                            <a href="#" class="sidebar__dropdown-links">Menu two</a>
-                                            <a href="#" class="sidebar__dropdown-links">Menu three</a>
-                                            <!-- </ul> -->
-                                        </div>
-
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </li>
-                        <li><a href="#" class="sidebar__links">Services</a></li>
-                        <li><a href="#" class="sidebar__links">About</a></li>
-                        <li><a href="#" class="sidebar__links">Contact</a></li>
-
-                    </ul>
-                </div>
-
-
-
-            </div>
-        </aside>
-
         <div class="menu__ham">
-            <p id="hamIcon" class='menu__icon'>&nbsp;</p>
+            <p id="hamIcon" class='menu__icon'><i class="fa-solid fa-bars"></i></p>
 
         </div>
 
 
+
+
+
     </header>
 
+    <aside class="aside">
+        <div class="sidebar">
+
+            <div class="sidebar__close-icon">
+                <img src="./images/icon-close.svg" alt="x close button" class="sidebar__closeBtn">
+            </div>
+
+            <div class="sidebar__menu">
+
+                <ul class="sidebar__list">
+                    <li><a href="index.html" class="sidebar__links">Home</a></li>
+                    <li><a href="#" class="sidebar__links">Gallery </a>
+                        <span class="sidebar__icon" id="side-icon">
+                            <i class="fa-solid fa-chevron-down"></i></span>
+
+                        <div class="sidebar__dropdown-content">
+                            <ul class="sidebar__dropdown-list">
+                                <li><a href="#" class="sidebar__dropdown-links">Nature</a></li>
+                                <li><a href="#" class="sidebar__dropdown-links">Portrait</a></li>
+                                <li><a href="#" class="sidebar__dropdown-links">Architecture</a></li>
+                                <li><a href="#" class="sidebar__dropdown-links">Animals</a></li>
+                                <li><a href="#" class="sidebar__dropdown-links">Sports</a></li>
+                                <li><a href="#" class="sidebar__dropdown-links">Travel</a></li>
+                                <li><a href="#" class="sidebar__dropdown-links submenu">Sub Menu <span
+                                            class="sidebar__icon">
+                                            <i class="fa-solid fa-chevron-right" id="subdropdown"></i></span></a>
+
+
+                                    <div class="sidebar__sub-dropdown">
+                                        <!-- <ul> -->
+                                        <a href="#" class="sidebar__dropdown-links">Menu One</a>
+                                        <a href="#" class="sidebar__dropdown-links">Menu two</a>
+                                        <a href="#" class="sidebar__dropdown-links">Menu three</a>
+                                        <!-- </ul> -->
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li><a href="#" class="sidebar__links">Services</a></li>
+                    <li><a href="#" class="sidebar__links">About</a></li>
+                    <li><a href="#" class="sidebar__links">Contact</a></li>
+
+                </ul>
+            </div>
+
+
+
+        </div>
+    </aside>
+
+
+
+
+    <!-- swiper  -->
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/img_1.jpg" alt="" srcset=""></div>
+            <div class="swiper-slide"><img src="./images/img_2.jpg" alt="" srcset=""></div>
+            <div class="swiper-slide"><img src="./images/img_3.jpg" alt="" srcset=""></div>
+            <div class="swiper-slide"><img src="./images/img_4.jpg" alt="" srcset=""></div>
+            <div class="swiper-slide"><img src="./images/img_5.jpg" alt="" srcset=""></div>
+            <div class="swiper-slide"><img src="./images/img_6.jpg" alt="" srcset=""></div>
+            <div class="swiper-slide"><img src="./images/img_7.jpg" alt="" srcset=""></div>
+
+        </div>
+        <div>
+
+            <!-- <div class="swiper-pagination"></div> -->
+            <div class="swiper-button-next next_arrow"></div>
+            <div class="swiper-button-prev prev_arrow"></div>
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+
+
+
+            // slidesPerView: 3,
+            mousewheel: true,
+            // centeredSlides: true,
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+            slidesPerGroup: 1,
+            // loopFillGroupWithBlank: true,
+
+            // slidesPerView: "3",
+            // spaceBetween: 30,
+            // cssMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+
+                // el: ".swiper-pagination",
+                // clickable: true,
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                600: {
+                    slidesPerView: 2,
+                },
+                950: {
+                    slidesPerView: 3,
+                },
+            }
+        });
+    </script>
 
     <script src="app.js"></script>
 </body>
