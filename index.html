@@ -40,13 +40,14 @@
         <nav class="nav">
             <ul class="navbar__navlist">
                 <li><a href="index.html" class="navbar__navlinks">Home</a></li>
-                <li><a href="#" class="navbar__navlinks  ">Gallery <span class="navbar__icon">
+                <li><a href="./nature.html" class="navbar__navlinks  ">Gallery <span class="navbar__icon">
                             <i class="fa-solid fa-chevron-down"></i></span></a>
 
                     <div class="navbar__dropdown-content">
                         <ul class="navbar__dropdown-list">
                             <li><a href="#" class="navbar__dropdown-links">Nature</a></li>
                             <li><a href="#" class="navbar__dropdown-links">Portrait</a></li>
+                            <li><a href="#" class="navbar__dropdown-links">People</a></li>
                             <li><a href="#" class="navbar__dropdown-links">Architecture</a></li>
                             <li><a href="#" class="navbar__dropdown-links">Animals</a></li>
                             <li><a href="#" class="navbar__dropdown-links">Sports</a></li>
@@ -68,9 +69,9 @@
                     </div>
 
                 </li>
-                <li><a href="#" class="navbar__navlinks">Services</a></li>
-                <li><a href="#" class="navbar__navlinks">About</a></li>
-                <li><a href="#" class="navbar__navlinks">Contact</a></li>
+                <li><a href="./services.html" class="navbar__navlinks">Services</a></li>
+                <li><a href="./about.html" class="navbar__navlinks">About</a></li>
+                <li><a href="./contact.html" class="navbar__navlinks">Contact</a></li>
 
             </ul>
         </nav>
@@ -157,20 +158,56 @@
     <!-- Swiper -->
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./images/img_1.jpg" alt="" srcset=""></div>
-            <div class="swiper-slide"><img src="./images/img_2.jpg" alt="" srcset=""></div>
-            <div class="swiper-slide"><img src="./images/img_3.jpg" alt="" srcset=""></div>
-            <div class="swiper-slide"><img src="./images/img_4.jpg" alt="" srcset=""></div>
-            <div class="swiper-slide"><img src="./images/img_5.jpg" alt="" srcset=""></div>
-            <div class="swiper-slide"><img src="./images/img_6.jpg" alt="" srcset=""></div>
-            <div class="swiper-slide"><img src="./images/img_7.jpg" alt="" srcset=""></div>
+            <div class="swiper-slide"><img src="./images/img_1.jpg" alt="Nature image">
+                <div class="slider-content">
+                    <h3 class="slidername">Nature</h3>
+                    <a href="#" class="morepic btn">More Photos</a>
+                </div>
+            </div>
+            <div class="swiper-slide"><img src="./images/img_2.jpg" alt="Portrait image">
+                <div class="slider-content">
+                    <h3 class="slidername">Portrait</h3>
+                    <a href="#" class="morepic btn">More Photos</a>
+                </div>
+            </div>
+            <div class="swiper-slide"><img src="./images/img_3.jpg" alt="People image">
+                <div class="slider-content">
+                    <h3 class="slidername">People</h3>
+                    <a href="#" class="morepic btn">More Photos</a>
+                </div>
+            </div>
+            <div class="swiper-slide"><img src="./images/img_4.jpg" alt="Architecture image">
+                <div class="slider-content">
+                    <h3 class="slidername">Architecture</h3>
+                    <a href="#" class="morepic btn">More Photos</a>
+                </div>
+            </div>
+            <div class="swiper-slide"><img src="./images/img_5.jpg" alt="animals image">
+                <div class="slider-content">
+                    <h3 class="slidername">Animals</h3>
+                    <a href="#" class="morepic btn">More Photos</a>
+                </div>
+            </div>
+            <div class="swiper-slide"><img src="./images/img_6.jpg" alt="Sports image">
+                <div class="slider-content">
+                    <h3 class="slidername">Sports</h3>
+                    <a href="#" class="morepic btn">More Photos</a>
+                </div>
+            </div>
+            <div class="swiper-slide"><img src="./images/img_7.jpg" alt="Travel image">
+                <div class="slider-content">
+                    <h3 class="slidername">Travel</h3>
+                    <a href="#" class="morepic btn">More Photos</a>
+                </div>
+            </div>
 
         </div>
         <div>
 
             <!-- <div class="swiper-pagination"></div> -->
-            <div class="swiper-button-next next_arrow"></div>
-            <div class="swiper-button-prev prev_arrow"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
         </div>
         <!-- <div class="swiper-pagination"></div> -->
     </div>
@@ -183,23 +220,19 @@
     <script>
         var swiper = new Swiper(".mySwiper", {
 
-
-
-            // slidesPerView: 3,
             mousewheel: true,
-            // centeredSlides: true,
             slidesPerView: 'auto',
             spaceBetween: 20,
             slidesPerGroup: 1,
-            // loopFillGroupWithBlank: true,
 
-            // slidesPerView: "3",
-            // spaceBetween: 30,
-            // cssMode: true,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+            // autoplay: {
+            //     delay: 2500,
+
+            // },
             pagination: {
 
                 // el: ".swiper-pagination",

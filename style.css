@@ -10,6 +10,9 @@ body {
   margin: 0 auto;
   padding: 0 1rem; }
 
+.site-section {
+  padding: 5rem 0; }
+
 .flex {
   display: flex !important;
   justify-content: center;
@@ -97,6 +100,9 @@ body {
 
 .font-w-700 {
   font-weight: 700 !important; }
+
+.p_relative {
+  position: relative; }
 
 *,
 *::after,
@@ -227,7 +233,7 @@ html {
 
 .navbar__dropdown-links {
   min-width: 200px;
-  padding: 20px 20px;
+  padding: 16px 20px;
   display: block; }
 
 .navbar__icon {
@@ -255,9 +261,6 @@ html {
   transform: translateY(10px);
   background-color: #fff;
   border-top: 4px solid #20c997;
-  -webkit-box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.75);
   z-index: 1; }
 
 .navbar__dropdown-list li:hover .navbar__sub-dropdown {
@@ -368,18 +371,69 @@ html {
 
 .swiper {
   width: 100%;
-  height: 80vh; }
+  height: 85vh; }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #752222;
+  background: #000;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  position: relative;
+  overflow: hidden; }
 
 .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover; }
+  object-fit: cover;
+  transition: all 400ms ease; }
+
+.swiper-slide:hover img {
+  opacity: .5555;
+  transform: scale(1.07); }
+
+.slider-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+.slidername {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 1rem; }
+
+.morepic {
+  border-color: #fff;
+  color: #fff;
+  border-width: 2px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: .1em;
+  padding: 0.5rem 1.5rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; }
+
+.morepic:hover {
+  background-color: #fff;
+  color: #000; }
+
+.nature__gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  gap: 25px; }
+
+.nature__imgs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 13px 22px -14px rgba(0, 0, 0, 0.64);
+  -moz-box-shadow: 2px 13px 22px -14px rgba(0, 0, 0, 0.64);
+  box-shadow: 2px 13px 22px -14px rgba(0, 0, 0, 0.64); }
+
+.nature__imgs img:hover {
+  cursor: pointer; }
