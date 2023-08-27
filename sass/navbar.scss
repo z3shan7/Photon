@@ -203,6 +203,8 @@
         display: block;
         transition: all .4s ease-in;
         z-index: 1000;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
 
         &__show {
             transform: translateX(0);

@@ -315,7 +315,9 @@ html {
     transform: translateX(100%);
     display: block;
     transition: all .4s ease-in;
-    z-index: 1000; }
+    z-index: 1000;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch; }
     .sidebar__show {
       transform: translateX(0); }
     .sidebar__closeBtn {
