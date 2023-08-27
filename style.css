@@ -316,8 +316,7 @@ html {
     display: block;
     transition: all .4s ease-in;
     z-index: 1000;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch; }
+    overflow-y: scroll; }
     .sidebar__show {
       transform: translateX(0); }
     .sidebar__closeBtn {
@@ -345,10 +344,8 @@ html {
       margin-left: 20px;
       display: flex;
       flex-direction: column;
-      gap: 30px; }
-    .sidebar__active {
-      display: flex;
-      transition: all 500ms ease-in; }
+      gap: 30px;
+      display: none; }
     .sidebar__dropdown-links {
       font-size: 16px;
       font-weight: 400;
@@ -369,7 +366,17 @@ html {
     0% {
       transform: rotate(0deg); }
     100% {
-      transform: rotate(360deg); } } }
+      transform: rotate(360deg); } }
+  .sidebar__social_icons {
+    display: flex;
+    margin-top: 3rem;
+    gap: 30px; }
+  .sidebar__social_icons a {
+    color: #000;
+    font-size: 20px;
+    transition: all .4s ease; }
+  .sidebar__social_icons a:hover {
+    color: var(--primary-green); } }
 
 .swiper {
   width: 100%;
