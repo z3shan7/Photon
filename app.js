@@ -1,9 +1,17 @@
 const sidebarDropDown = document.getElementById('side-icon')
 const dropDownList = document.querySelector('.sidebar__dropdown-list')
 
+const subBtn = document.getElementById('subdropdown')
+const subDropdownContent = document.querySelector('.sidebar__sub-dropdown')
+console.log(subdropdown)
 
 sidebarDropDown.addEventListener('click', () => {
     dropDownList.classList.toggle('sidebar__active')
+
+})
+
+subBtn.addEventListener('click', () => {
+    subDropdownContent.classList.toggle('sidebar__sub-dropdown-active')
 
 })
 
