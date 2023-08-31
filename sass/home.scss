@@ -96,11 +96,13 @@ body {
 .heading-4 {
     font-size: 24px;
     color: #000000;
+    margin-bottom: 1rem;
 
 }
 
 .heading-5 {
     font-size: 16px;
+
 }
 
 
@@ -123,9 +125,20 @@ body {
 
 
 .logo-size {
-    font-size: 72px;
-    color: var(--primary-green);
+    // font-size: 72px;
+    // color: var(--primary-green);
+    transform: scale(1);
+    width: 72px;
+    transition: all 0.4s ease-in-out;
+    margin-bottom: 1.5rem;
 }
+
+.services__cols:hover .logo-size {
+    transform: scale(1.2);
+
+}
+
+
 
 .color-green {
     color: var(--primary-green);
@@ -175,7 +188,7 @@ body {
     content: '';
     position: absolute;
     left: 50%;
-    top: 70px;
+    top: 75px;
     left: 50%;
     bottom: 0;
     width: 100px;
@@ -185,16 +198,18 @@ body {
 
 }
 
+
+
 @media screen and (max-width:800px) {
     .heading-1 {
         font-size: 2.5rem;
     }
 
-        .heading-1::after {
-        
-            top: 60px;
-           
-    
-        }
+    .heading-1::after {
+
+        top: 60px;
+
+
+    }
 
 }
