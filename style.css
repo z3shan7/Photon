@@ -22,7 +22,7 @@ body {
   padding: 8rem 0; }
 
 .pd-top-bg {
-  padding-top: 4rem; }
+  padding-top: 8rem; }
 
 .pd-bg {
   padding-bottom: 2rem; }
@@ -548,7 +548,42 @@ html {
     font-weight: 400;
     text-align: left;
     margin-top: 2rem;
-    width: 80%; }
+    width: 80%;
+    line-height: 1.7; }
+  .about__testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    text-align: center; }
+  .about__users {
+    flex-basis: 30.3333%; }
+  .about__user-pic {
+    padding-bottom: 2rem; }
+  .about__user-pic img {
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 50%;
+    height: auto; }
+  .about__user-text {
+    font-size: 16px;
+    color: var(--light-gray);
+    font-weight: 400;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    line-height: 1.7; }
+  .about__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; }
+  .about__icons i {
+    font-size: 16px;
+    color: var(--primary-green);
+    transition: all .5 ease-in; }
+  .about__icons i:hover {
+    color: #17916c; }
 
 @media screen and (max-width: 1000px) {
   .about {
@@ -563,4 +598,10 @@ html {
       text-align: center; }
     .about__para {
       text-align: center;
-      width: 100%; } }
+      width: 100%; }
+    .about__users {
+      flex-basis: 45.3333%; } }
+
+@media screen and (max-width: 520px) {
+  .about__users {
+    flex-basis: 100%; } }

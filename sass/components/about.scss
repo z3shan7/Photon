@@ -33,6 +33,61 @@
         text-align: left;
         margin-top: 2rem;
         width: 80%;
+        line-height: 1.7;
+    }
+
+
+    &__testimonials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        // background-color: #ccc;
+        text-align: center;
+    }
+
+    &__users {
+        flex-basis: 30.3333%;
+    }
+
+    &__user-pic {
+        padding-bottom: 2rem;
+    }
+
+    &__user-pic img {
+        margin: 0 auto;
+        border-radius: 50%;
+        width: 50%;
+        height: auto;
+    }
+
+    &__user-text {
+        font-size: 16px;
+        color: var(--light-gray);
+        font-weight: 400;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        line-height: 1.7;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+    }
+
+    &__icons i {
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: all .5 ease-in;
+    }
+
+    &__icons i:hover {
+        color: #17916c;
+
     }
 }
 
@@ -48,17 +103,36 @@
     .about {
         width: 90vw;
 
-    &__mission{
-        flex-direction: column;
-    }
-        &__text{
+        &__mission {
+            flex-direction: column;
+        }
+
+        &__text {
             text-align: center;
         }
-                 &__para{
-                    text-align: center;
-                    width: 100%;
-                 }
+
+        &__para {
+            text-align: center;
+            width: 100%;
+
+        }
+
+        &__users {
+            flex-basis: 45.3333%;
+        }
+
+
 
     }
 
+}
+
+@media screen and (max-width:520px) {
+
+    .about {
+        &__users {
+            flex-basis: 100%;
+        }
+
+    }
 }
