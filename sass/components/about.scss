@@ -82,7 +82,7 @@
     &__icons i {
         font-size: 16px;
         color: var(--primary-green);
-        transition: all .5 ease-in;
+        transition: all 0.2s ease-in;
     }
 
     &__icons i:hover {
@@ -132,6 +132,10 @@
     .about {
         &__users {
             flex-basis: 100%;
+        }
+
+        &__testimonials {
+            gap: 40px;
         }
 
     }

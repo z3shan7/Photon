@@ -581,7 +581,7 @@ html {
   .about__icons i {
     font-size: 16px;
     color: var(--primary-green);
-    transition: all .5 ease-in; }
+    transition: all 0.2s ease-in; }
   .about__icons i:hover {
     color: #17916c; }
 
