@@ -39,6 +39,9 @@ body {
 .margin-b {
   margin-bottom: 1rem; }
 
+.m-x {
+  margin: 1rem 0; }
+
 .text-uppercase {
   text-transform: uppercase; }
 
@@ -114,6 +117,16 @@ input {
 
 .title {
   position: relative; }
+
+#message {
+  height: auto !important;
+  overflow: auto !important;
+  resize: vertical !important; }
+
+.btn-primary {
+  color: #fff;
+  background-color: #20c997;
+  border-color: #20c997; }
 
 .heading-1::after {
   content: '';
@@ -687,9 +700,25 @@ html {
 .contact {
   width: 60vw;
   margin: 0 auto; }
+  .contact__flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 140px; }
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 75%; }
+  .contact__address {
+    flex-basis: 25%;
+    max-width: 25%; }
+  .contact__row-1 {
+    display: flex;
+    gap: 15px;
+    width: 100%; }
   .contact__label {
-    display: inline-block;
-    margin-bottom: 0.5rem; }
+    display: inline-block; }
   .contact__input {
     display: block;
     width: 100%;
@@ -713,3 +742,37 @@ html {
   .contact__input:focus {
     border-color: #20c997;
     outline: none; }
+  .contact__cols {
+    width: 100%;
+    margin: .5rem 0; }
+  .contact__textarea {
+    height: auto !important;
+    overflow: auto !important;
+    resize: vertical !important; }
+  .contact__btn {
+    margin-top: 1rem;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 0.475rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; }
+
+@media screen and (max-width: 1000px) {
+  .contact {
+    width: 80vw; }
+    .contact__flex {
+      flex-direction: column;
+      flex-basis: 100%;
+      gap: 50px; }
+    .contact__form {
+      width: 100%; }
+    .contact__address {
+      max-width: 100%; } }

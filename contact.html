@@ -175,7 +175,7 @@
                 <h3 class="heading-1 text-center">Contact Us</h3>
             </div>
 
-            <div class="contact__form">
+            <div class="contact__flex pd-sm">
 
                 <!-- <form action="#">
 
@@ -184,30 +184,62 @@
                         <input type="Name">
                     </div>
                 </form> -->
-                <form action="#" method="POST">
-                    <label for="first_name">First Name</label class="contact__label">
-                    <input type="text" id="first_name" name="first_name" required class="contact__input">
 
-                    <label for="last_name">Last Name</label class="contact__label">
-                    <input type="text" id="last_name" name="last_name" required class="contact__input">
+                <form action="#" method="POST" class="contact__form ">
 
-                    <label for="email">Email</label class="contact__label">
-                    <input type="email" id="email" name="email" required class="contact__input">
 
-                    <label for="subject">Subject</label class="contact__label">
-                    <input type="text" id="subject" name="subject" required class="contact__input">
+                    <div class="contact__row-1">
 
-                    <label for="message">Message</label class="contact__label">
-                    <textarea id="message" name="message" rows="7" cols="30" required></textarea>
+                        <div class="contact__cols">
+                            <label for="first_name">First Name</label class="contact__label">
+                            <input type="text" id="first_name" name="first_name" required class="contact__input">
+                        </div>
+                        <div class="contact__cols">
 
-                    <input type="submit" value="Submit">
+                            <label for="last_name">Last Name</label class="contact__label">
+                            <input type="text" id="last_name" name="last_name" required class="contact__input">
+                        </div>
+                    </div>
+
+                    <div class="contact__cols">
+
+                        <label for="email">Email</label class="contact__label">
+                        <input type="email" id="email" name="email" required class="contact__input">
+
+                    </div>
+                    <div class="contact__cols">
+
+                        <label for="subject">Subject</label class="contact__label">
+                        <input type="text" id="subject" name="subject" required class="contact__input">
+                    </div>
+
+                    <div class="contact__cols">
+
+                        <label for="message">Message</label class="contact__label">
+                        <textarea id="message" name="message" rows="7" cols="30" required
+                            class="contact__input contact__textarea"
+                            placeholder="Write your notes or questions here..."></textarea>
+                    </div>
+
+                    <button type="submit" value="Submit" class="contact__btn btn-primary">Send message</button>
                 </form>
 
-            </div>
-            <div class="contact__address">
+                <div class="contact__address">
+
+                    <h6 class="heading-5 font-w-700">Address</h6>
+                    <p class="heading-5 font-w-400 m-x">203 Fake St. Mountain View, San Francisco, California, USA</p>
+
+                    <h6 class="heading-5 font-w-700 m-x">Phone</h6>
+                    <p class="heading-5 color-green m-x">+1 232 3235 324</p>
+                    <h6 class="heading-5 font-w-700 m-x">Email Address</h6>
+                    <p class="heading-5 color-green m-x">youremail@domain.com</p>
+
+
+
+
+                </div>
 
             </div>
-
         </div>
 
 

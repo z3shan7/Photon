@@ -57,6 +57,10 @@ body {
     margin-bottom: 1rem;
 }
 
+.m-x {
+    margin: 1rem 0;
+}
+
 .text-uppercase {
     text-transform: uppercase;
 }
@@ -187,6 +191,19 @@ input {
 
 .title {
     position: relative;
+}
+
+#message {
+    height: auto !important;
+    overflow: auto !important;
+    resize: vertical !important;
+    // display: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #20c997;
+    border-color: #20c997
 }
 
 .heading-1::after {
