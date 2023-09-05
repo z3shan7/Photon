@@ -424,27 +424,29 @@ html {
     background-color: #fff;
     right: 0;
     bottom: 0;
-    min-height: 100vh;
+    height: calc(100vh);
     width: 300px;
-    padding: 2rem 0;
+    padding-top: 20px;
     transform: translateX(100%);
     display: block;
     transition: all .4s ease-in;
     z-index: 1000;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch; }
+    box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1); }
     .sidebar__show {
       transform: translateX(0); }
     .sidebar__closeBtn {
-      float: right;
-      width: 20px;
-      margin-right: 2rem; }
+      font-size: 30px;
+      width: 100%;
+      padding-left: 15rem; }
     .sidebar__closeBtn:hover {
-      transition: transform 500ms linear;
-      animation: spin 1s forwards infinite;
       cursor: pointer; }
     .sidebar__menu {
-      padding: 85px 20px 23px 29px; }
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+      position: relative;
+      padding: 0 20px 20px 20px;
+      height: calc(100vh - 52px);
+      padding-bottom: 150px; }
     .sidebar__list {
       display: flex;
       flex-direction: column;
