@@ -29,3 +29,31 @@ hamIcon.addEventListener('click', () => {
 closeIcon.addEventListener('click', () => {
     sidebar.classList.remove('sidebar__show')
 })
+
+// active links
+
+
+const navlinkEls = document.querySelectorAll('.navbar__navlinks');
+const windowPathname = window.location.pathname;
+
+navlinkEls.forEach(navlinkEl => {
+    const navLinkPathname = new URL(navlinkEl.href).pathname;
+
+
+    if ((windowPathname === navLinkPathname) || (windowPathname === '/index.html' && navLinkPathname === '/')) {
+        navlinkEl.classList.add('active')
+    }
+})
+
+const sideNavLinksEls = document.querySelectorAll('.sidebar__links')
+// const windowPathname = window.location.pathname;
+
+sideNavLinksEls.forEach(sideLinkEl => {
+    const sideNavPathname = new URL(sideLinkEl.href).pathname;
+
+    if ((windowPathname === sideNavPathname) || (windowPathname === '/index.html' && sideNavPathname === '/')) {
+        sideLinkEl.classList.add('active-link')
+    }
+
+
+})

@@ -45,6 +45,11 @@
 
     }
 
+    &__navlinks.active {
+        color: var(--primary-green);
+
+    }
+
     &__dropdown-content {
         display: block;
         position: absolute;
@@ -191,6 +196,11 @@
         display: block;
     }
 
+
+    // =========================
+    //       side nav
+    // =========================
+
     .sidebar {
         position: fixed;
         background-color: #fff;
@@ -253,7 +263,7 @@
             color: var(--primary-green);
         }
 
-        &__active__link {
+        &__links.active-link {
 
             color: var(--primary-green);
         }
