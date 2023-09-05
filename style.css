@@ -339,9 +339,6 @@ html {
   opacity: 0;
   transform: translateY(10px);
   border-top: 4px solid #20c997;
-  -webkit-box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.75);
   z-index: 1000; }
 
 .navbar__dropdown-list {
@@ -559,6 +556,17 @@ html {
 .morepic:hover {
   background-color: #fff;
   color: #000; }
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none; }
+
+.swiper-button-next i,
+.swiper-button-prev i {
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: .7rem .7rem; }
 
 .nature__gallery {
   display: grid;

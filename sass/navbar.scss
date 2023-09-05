@@ -60,11 +60,7 @@
         visibility: hidden;
         opacity: 0;
         transform: translateY(10px);
-        // box-shadow: 10px 5px 3px rgba($color: #000000, $alpha: 1.0);
         border-top: 4px solid #20c997;
-        -webkit-box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.75);
-        box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.75);
         z-index: 1000;
 
     }
@@ -90,7 +86,6 @@
 
     &__dropdown-links:hover {
         background: #f4f5f9;
-        // background-color: #4b0808;
         color: #25262a !important;
     }
 
