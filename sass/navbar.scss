@@ -200,6 +200,7 @@
         position: fixed;
         background-color: #fff;
         right: 0;
+        top: 0;
         bottom: 0;
         height: calc(100vh);
         width: 300px;
@@ -228,16 +229,16 @@
             // margin-top: 1rem;
             width: 100%;
             padding-left: 15rem;
-           
+
 
         }
 
-        &__closeBtn i {
-            // padding-right: 120px;
-            // padding-left: 20px;
-            // float: right;
+        // &__closeBtn i {
+        // padding-right: 120px;
+        // padding-left: 20px;
+        // float: right;
 
-        }
+        // }
 
         &__closeBtn:hover {
             // transition: transform 500ms linear;
