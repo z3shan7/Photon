@@ -210,7 +210,7 @@
         display: block;
         transition: all .4s ease-in;
         z-index: 1000;
-        // overflow-y: scroll;
+
         // -webkit-overflow-scrolling: touch;
         box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
 
@@ -219,39 +219,36 @@
             // display: block;
         }
 
+        &__close-icon {
+
+            display: block;
+        }
 
 
         &__closeBtn {
-            // float: left;
-            font-size: 30px;
-            // // width: 100%;
-            // margin-right: 2rem;
-            // margin-top: 1rem;
-            width: 100%;
-            padding-left: 15rem;
+            // padding-right: 120px;
+            // padding-right: 30px;
+            width: 20px;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            margin-left: 15rem;
 
 
         }
 
-        // &__closeBtn i {
-        // padding-right: 120px;
-        // padding-left: 20px;
-        // float: right;
-
-        // }
-
         &__closeBtn:hover {
-            // transition: transform 500ms linear;
+            // transition: all 500ms linear;
             // animation: spin 1s forwards infinite;
             cursor: pointer;
 
         }
 
         &__menu {
+
             overflow-y: scroll;
             -webkit-overflow-scrolling: touch;
-            position: relative;
-            padding: 0 20px 20px 20px;
+
+            padding: 10px 20px 20px 20px;
             height: calc(100vh - 52px);
             padding-bottom: 150px;
 
@@ -264,6 +261,7 @@
             display: flex;
             flex-direction: column;
             gap: 25px;
+            width: 100%;
 
         }
 
