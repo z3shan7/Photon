@@ -18,16 +18,21 @@ subBtn.addEventListener('click', () => {
 const hamIcon = document.querySelector('.menu__icon')
 const sidebar = document.querySelector('.sidebar')
 const closeIcon = document.querySelector('.sidebar__closeBtn')
+const body = document.querySelector('.body')
+
 
 console.log(sidebar)
 
 hamIcon.addEventListener('click', () => {
     sidebar.classList.add('sidebar__show')
+    body.classList.add('sidebar__blur-bg')
+
 
 
 })
 closeIcon.addEventListener('click', () => {
     sidebar.classList.remove('sidebar__show')
+    body.classList.remove('sidebar__blur-bg')
 })
 
 // active links
