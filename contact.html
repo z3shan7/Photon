@@ -31,7 +31,20 @@
     <title>Photon</title>
 </head>
 
-<body>
+<body class="body">
+    <div class="preloader">
+        <div class="loader">
+            <div class="square" id="sq1"></div>
+            <div class="square" id="sq2"></div>
+            <div class="square" id="sq3"></div>
+            <div class="square" id="sq4"></div>
+            <div class="square" id="sq5"></div>
+            <div class="square" id="sq6"></div>
+            <div class="square" id="sq7"></div>
+            <div class="square" id="sq8"></div>
+            <div class="square" id="sq9"></div>
+        </div>
+    </div>
     <header class="header">
         <!-- logo box -->
         <div class="logo-box">
@@ -168,7 +181,7 @@
     </aside>
 
 
-    <section class="contact">
+    <section class="contact pd-y">
         <div class="contact__content pd-sm">
 
             <div>
@@ -294,6 +307,14 @@
         crossorigin="anonymous"></script>
 
     <script src="app.js"></script>
+    <!-- Pre Loader -->
+    <script>
+        const loader = document.querySelector('.preloader')
+        window.addEventListener('load', () => {
+            loader.style.display = "none"
+
+        })
+    </script>
 </body>
 
 </html>
