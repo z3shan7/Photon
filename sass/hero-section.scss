@@ -65,6 +65,8 @@
 .swiper-button-next:after,
 .swiper-button-prev:after {
     display: none;
+
+
 }
 
 .swiper-button-next i,
@@ -74,4 +76,13 @@
     color: #fff;
     padding: .7rem .7rem;
 
+
+
+}
+
+.swiper-button-next {
+    margin-right: 1.3rem;
+}
+.swiper-button-prev {
+    margin-left: 1.3rem;
 }

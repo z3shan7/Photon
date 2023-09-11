@@ -667,6 +667,12 @@ html {
   color: #fff;
   padding: .7rem .7rem; }
 
+.swiper-button-next {
+  margin-right: 1.3rem; }
+
+.swiper-button-prev {
+  margin-left: 1.3rem; }
+
 .nature__gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
